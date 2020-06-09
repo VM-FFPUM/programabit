@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.contendor {
+  margin: auto;
+  width: 95%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0px;
+}
+/*-----------------------Estilos del header---------------------*/
+
+.header{
+  height: 60px;
+}
+
+.header .contendor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-menu {
+  margin: 10px
+}
+
+.titulo {
+  color: white;
+  margin-top: 10px;
+}
+
+.icon-menu {
+  display: block;
+  width: 38px;
+  height: 50px;
+  font-size: 30px;
+  color:rgb(0, 0, 0);
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+/*-------------------Estilos del Menu-----------------*/
+.nav {
+  position: absolute;
+  top: 150px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: rgba(57, 111, 231, 0.69);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+}
+
+.menu__link:hover, .select {
+  background: white;
+  color: black;
+}
+
+.mostrar {
+  left: 0;
+}
+
+
+/*---------Estilos de banner-----------*/
+
+.logo {
+  width: 11%;
+  height: auto;
+  border-radius: 60%;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  opacity: 0.750;
+  justify-content: space-between;
+}
+
+.banner {
+  margin-top: -81px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 20px;
+  size: 100% 100%;
+}
+
+.banner .contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: white;
+  text-align: center;
+  : rgba(18, 52, 235, 0.59);
+}
+
+.banner__titulo {
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+.banner__txt {
+  display: none;
+}
+
+.span {
+  background-position: center;
+  background-size: cover;
+  background-origin: padding-box;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.slider ul {
+  display: flex;
+  width: 200%;
+  padding: 0;
+
+  animation: cambio 10s infinite;
+  animation-direction: normal;
+
+}
+
+.slider li{
+  list-style: none;
+  width: 100%;
+}
+
+.slider img{
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -100px;
+}
+
+@keyframes cambio {
+ 0% {margin-left: 0;}
+ 40% {margin-left: 0;}
+
+ 50% {margin-left: -100%;}
+ 90% {margin-left: -100%;}
+}
+
+.banner2 {
+  height: 94%
+}
+
+/*------------------------Estilos de info----------------------*/
+
+
+.sub__titulo {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+}
+
+.info__columna {
+  background: rgba(25, 48, 255, 0.52);
+  color: white;
+  padding: 15px;
+  margin-bottom: 50px;
+  margin-top: -20px;
+}
+
+.info__img {
+  height: auto;
+  width: auto;
+  justify-content: space-between;
+}
+
+.info__titulo {
+  text-align: center;
+  font-size: 30px;
+}
+
+.info__txt {
+  text-align: justify;
+}
+
+/*--------------------Estilos de info2--------------------*/
+
+.sub__titulo2 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: -20px;
+}
+
+.info2__columna {
+  background: rgba(44, 58, 250, 0.57);
+  color: white;
+  padding: 15px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.info2__titulo {
+  text-align: center;
+  font-size: 30px;
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.info2__txt {
+  text-align: justify;
+}
+
+.info2__img {
+  justify-content: space-between;
+  height: auto;
+  width: auto;
+}
+.others2 {
+  display:none;
+}
+
+/*--------------------Estilos de footer------------------*/
+
+.footer {
+  background: rgba(27, 111, 255, 0.81);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+.icon-argentina, .icon-paraguay, .icon-uruguay {
+  display: inline-block;
+  background: white;
+  text-decoration: none;
+  border-radius: 70%;
+  padding: 10px;
+  width: 50px;
+  height: 40px;
+}
+
+.icon-paraguay{
+  width: : 60px;
+}
+
+/*--------------Estilos Responsive---------------*/
+
+@media(min-width:580px) {
+
+  .logo {
+    width: 13%;
+    margin-top: 50px;
+  }
+
+  .banner__titulo {
+    font-size: 30px;
+  }
+
+  .info__titulo {
+    font-size: 40px;
+    margin: 0px;
+    margin-top: 10px;
+  }
+}
+
+@media(min-width:680px) {
+
+  .titulo {
+    font-size: 40px;
+  }
+
+  .banner__titulo {
+    font-size: 35px;
+    margin: 5px 0;
+    margin-top: 30px;
+  }
+
+  .nav {
+    top: 153px;
+  }
+
+  .sub__titulo, .sub__titulo2 {
+    margin-bottom: 80px;
+  }
+
+  .sub__titulo {
+    margin-top: -30px;
+  }
+
+  .info__titulo {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+
+  .sub__titulo2 {
+    margin-top: 30px;
+  }
+
+  .info2__columna {
+    width: 45%;
+    margin: 10px;
+    margin-top: 50px;
+  }
+
+  .info2__titulo {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .info2 {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    flex-wrap: wrap;
+  }
+
+  .info2__img {
+    margin-top: 0px;
+    justify-content: space-between;
+  }
+}
+
+@media(min-width:909px) {
+
+  .contendor {
+    width: 1000px;
+  }
+
+  .titulo {
+    font-size: 60px;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+    margin-top: 170px;
+  }
+
+  .banner__titulo {
+    font-size: 40px;
+    margin: 5px 0;
+    margin-top: 0px;
+  }
+
+  .banner__txt {
+    display: block;
+    font-size: 30px;
+    margin: 7px 0;
+  }
+
+  .nav {
+    top: 190px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+  }
+
+  .info__columna {
+    margin: 10px;
+    width: 30%;
+    margin-top: 50px;
+  }
+}
+
+@media(min-width: 1130px) {
+
+  .banner__titulo {
+    margin-top: 0px;
+  }
+
+  .logo{
+    margin-top: 70px;
+  }
+
+  .nav {
+    top: 190px;
+    position: static;
+    width: auto;
+  }
+
+  .menu {
+    display: flex;
+    color: white;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .menu__link {
+    background: none;
+    font-size: 20px;
+    color: white;
+  }
+
+  .select {
+    background: rgba(80, 85, 213, 0.9);
+    color: white;
+  }
+
+  .others {
+    display: block;
+    position: relative;
+    margin-top: 70px;
+  }
+
+  .others2{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+
+  .content__all{
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.sub__titulo2{
+  margin-bottom: 0px;
+  margin-top: -40px;
+
+}
+
+.content__img{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content__img img{
+    width: 100%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content__1{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(9, 73, 168, 0.78);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -750px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content__2{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(9, 73, 168, 0.78);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -800px;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content__3{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(9, 73, 168, 0.78);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -800px;
+    margin-top: -500px;
+    -webkit-transition: all 900ms;
+    transition: all 900ms;
+    -webkit-box-shadow: 0px 1px 20px -5px black;
+    box-shadow: 0px 1px 20px -5px black;
+}
+
+.content__4{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(9, 73, 168, 0.78);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -850px;
+    margin-top: -500px;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+}
+
+.content__img:hover .content__1{
+    width: 222%;
+    -webkit-transition: all 900ms;
+    transition: all 900ms;
+}
+
+.content__img:hover .content__2{
+    width: 222%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content__img:hover .content__3{
+    width: 222%;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content__img:hover .content__4{
+    width: 222%;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+}
+
+.content__img:hover img{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    opacity: 0.8;
+}
+
+.content__txt{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    padding: 8px;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content__txt h2{
+    font-size: 30px;
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content__txt p{
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content__txt a{
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    position: relative;
+    background-color: rgb(25, 168, 7);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content__img:hover h2{
+    opacity: 1;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.content__img:hover p{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content__img:hover a{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+
+@media(min-width: 1295px) {
+
+  .banner__titulo{
+    font-size: 50px;
+  }
+
+  .banner__txt {
+    font-size: 42px;
+  }
+
+  .logo{
+  width: 14%;
+  margin-top: 90px;
+  }
+
+  .titulo {
+    margin-bottom: 15px;
+  }
+}
+
+
+/***********************Sobre Nosotros************************/
+
+.nosotros h1{
+  color: black;
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+}
+
+.nosotros p{
+  color: black;
+  padding: 15px;
+  margin: 30px;
+  justify-content: space-around;
+  font-display: swap;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.nosotros h2{
+  color: black;
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/***********************Anuncios************************/
+
+.anuncios h1{
+  color: black;
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.anuncios p{
+  color: black;
+  padding: 15px;
+  margin: 30px;
+  justify-content: space-around;
+  font-display: swap;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.anuncios h2{
+  color: black;
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/***********************Registros************************/
+
+.registro h1{
+  color: black;
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+}
+
+.registro p{
+  color: black;
+  padding: 15px;
+  margin: 30px;
+  justify-content: space-around;
+  font-display: swap;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.registro h2{
+  color: black;
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/***********************Registros************************/
+
+.inicio  h1{
+  color: black;
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+}
+
+.inicio p{
+  color: black;
+  padding: 15px;
+  margin: 30px;
+  justify-content: space-around;
+  font-display: swap;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.inicio h2{
+  color: black;
+  padding: 15px;
+  margin-bottom: -20px;
+  margin-top: -50px;
+  text-align: left;
+  font-size: 20px;
+}

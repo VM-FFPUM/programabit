@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+{% load crispy_forms_tags %}
+
+<div class="container">
+  <h1>Ingrese tu Nombre de Usuario y Contraseña</h1>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form | crispy }}
+    <button type="submit" name="button" class= 'btn btn-success'>Iniciar sesión</button>
+  </form>
+  <h1><br></h1>
+</div>
+
+<!--==div class="container" class='iniciar'>
+  <h2>Ingrese tu Nombre de Usuario y Contraseña.<br>Si te acabas de registrar, Ya falta poco!<br>Si ya eres usuario, Bienvenido devuelta!</h2>
+  <h1><br></h1>
+  <form action="" method="POST">
+  {% csrf_token %}
+    <div class=''>
+      <label for="">Nombre de Usuario</label>
+      <input type="text" class='' placeholder="Nombre de Usuario" name = 'username'>
+    </div>
+    <div class= ''>
+      <labe>Contraseña</labe>
+      <input type="password" class= '' placeholder='Contraseña' name="password">
+    </div>
+    <h1><br></h1>
+    <button type="submit" name="button" class= 'btn btn-success'>Iniciar sesión</button>
+  </form>
+</div==-->
+
+{% endblock %}

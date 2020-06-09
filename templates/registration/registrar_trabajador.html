@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block contenido %}
+
+{% load crispy_forms_tags %}
+
+<div class="container">
+  <h1 class='registro'>¡Estas a un paso de encontrar cientos de oportunidades!</h1>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form | crispy }}
+    <input type="submit" value='Registrar' class='btn btn-success'>
+  </form>
+  <h1><br></h1>
+</div>
+
+<!--================Footer Area =================-->
+
+{% endblock %}

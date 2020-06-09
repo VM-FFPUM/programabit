@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<section class="">
+ <div class="container">
+  <div class="anuncios">
+    <h1>Anuncios de Trabajos disponibles:</h1>
+  </div>
+</section>
+
+{% block javascript %}
+ <script src="{% static 'js/confirmacion.js' %}"></script>
+{% endblock%}
+
+<!--=============Anuncios de Trabajo================-->
+
+<div class="container">
+  <h1><br></h1>
+  <table class="table table-bordered table-primary">
+    <tr class="table table-info">
+      <th>Título</th>
+      <th>Precio Estimado</th>
+      <th>Zona</th>
+      <th>Descripción</th>
+      <th>Habilidades Requeridas</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+{% for p in anuncios %}
+
+    <tr>
+       <td>{{ p.titulo }}</td>
+       <td>{{ p.precio_estimado }}</td>
+       <td>{{ p.zona }}</td>
+       <td>{{ p.descripcion }}</td>
+       <td>{{ p.habilidades_requeridas }}</td>
+       <td>
+         <a href="{% url 'modificar' p.id %}">Modificar</a>
+       </td>
+       <td>
+         <a href="{% url 'eliminar' p.id %}" onclick="return confirm('¿Estás seguro de querer eliminar este dato?')">Eliminar</a>
+       </td>
+       <td>
+         <a href="{% url 'propuesta' p.id %}">Postularse</a>
+       </td>
+    </tr>
+
+{% endfor %}
+
+  </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base2.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<div class="banner">
+  <div class="slider">
+    <ul>
+      <li><img class="banner2" src="{% static 'img/banner.jpg' %}" alt=""></li>
+      <li><img src="{% static 'img/banner1.jpeg' %}" alt=""></li>
+    </ul>
+  </div>
+    <div class="contenedor">
+      <img class="logo"src="{% static 'img/S!.png' %}" alt="">
+      <h2 class="banner__titulo"><span class="span">Llegó lo que todos estabamos buscando</span></h2>
+      <p class="banner__txt"><span class="span">Una nueva manera de trabajar Y/O<br>encontrar a la persona que necesitas</span></p>
+    </div>
+</div>
+<h2 class="sub__titulo2">¿Buscas trabajar o buscas un trabajador?</h2>
+<main class="others">
+  <div class="contenedor">
+    <section class="info2">
+      <article class="info2__columna">
+        <h2 class="info2__titulo">Inscribirme como Trabajador</h2>
+      </article>
+      <article class="info2__columna">
+        <h2 class="info2__titulo">Publicar una propuesta de Trabajo</h2>
+      </article>
+    </section>
+  </div>
+</main>
+<main class="others2">
+  <div class="content__all">
+      <div class="content__img">
+        <img src="{% static 'img/Trabajador.jpg' %}" alt="" class="info2__img">
+        <div class="content__txt">
+          <p>En "Solutions!" puedes encontrar todas las oportunidades como necesidades la población tenga. ¡Conseguir un trabajo nunca fue tan fácil! ¡No dudes en inscribirte!<br></p>
+          <a class="content__txt" href="{% url 'registrar_trabajador' %}">Inscríbase como Trabajador</a>
+          <h6><br></h6>
+        </div>
+        <div class="content__1"></div>
+        <div class="content__2"></div>
+        <div class="content__3"></div>
+        <div class="content__4"></div>
+      </div>
+  </div>
+  <div class="content__all">
+      <div class="content__img">
+      <img src="{% static 'img/Empleador.jpg' %}" alt="" class="info2__img">
+        <div class="content__txt">
+          <p>¿Necesitas de un Trabajador y no sabes donde buscar? Con el sistema de reputación de "Solutions!", puedes encontrar el trabajador ideal y con el respaldo de las experiencias que el trabajador tuvo previamente.<br></p>
+          <a class="content__txt" href="{% url 'registrar_cliente' %}">Inscríbase como Cliente</a>
+          <h6><br></h6>
+        </div>
+        <div class="content__1"></div>
+        <div class="content__2"></div>
+        <div class="content__3"></div>
+        <div class="content__4"></div>
+      </div>
+  </div>
+</main>
+
+{% endblock %}
